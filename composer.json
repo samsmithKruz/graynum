@@ -1,0 +1,29 @@
+{
+    "name": "samsmithkruz/graynum",
+    "description": "A lightweight PHP MVC framework",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Graynum\\": "app/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Smith",
+            "email": "samspike46@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": "^7.4 || ^8.0"
+    },
+    "scripts": {
+        "post-install-cmd": [
+            "@php -r 'file_exists(\".env\") || copy(\".env.example\", \".env\");'"
+        ],
+        "post-update-cmd": [
+            "@php -r 'file_exists(\".env\") || copy(\".env.example\", \".env\");'"
+        ]
+    }
+}
